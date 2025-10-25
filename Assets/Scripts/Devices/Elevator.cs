@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Core;
 using UnityEngine;
 
-namespace Systems
+namespace Devices
 {
     [RequireComponent(typeof(BoxCollider))]
     public class Elevator : MonoBehaviour
@@ -133,7 +133,6 @@ namespace Systems
             }
         }
 
-#if UNITY_EDITOR
         // ----- Debug visualization -----
         private void OnDrawGizmosSelected()
         {
@@ -164,5 +163,4 @@ namespace Systems
             }
         }
     }
-#endif
 }
